@@ -4,11 +4,12 @@
 import { useState } from "react";
 
 /* Instruments */
-import { useSelector, selectCount, useDispatch, decrement, increment, incrementByAmount, incrementIfOddAsync } from "@/lib/redux";
+import { useSelector, selectCount, useDispatch, decrement, increment, incrementByAmount, incrementIfOddAsync, selectStatus } from "@/lib/redux";
 import styles from "./counter.module.css";
 
 export const Counter = (): JSX.Element => {
   const count: number = useSelector(selectCount);
+  const status: string = useSelector(selectStatus);
   
   //initialize dispatch
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ export const Counter = (): JSX.Element => {
             // dispatch event to decrease count by 1
             dispatch(decrement());
           }}
+          disabled={status==="loading"}
         >
           -
         </button>
@@ -49,6 +51,7 @@ export const Counter = (): JSX.Element => {
             // dispatch event to increment count by 1
             dispatch(increment());
           }}
+          disabled={status==="loading"}
         >
           +
         </button>
@@ -63,6 +66,7 @@ export const Counter = (): JSX.Element => {
             //Resetting Increment Amount
             setIncrementAmount(0);
           }}
+          disabled={status==="loading"}
         >
           Add Amount
         </button>
@@ -76,8 +80,9 @@ export const Counter = (): JSX.Element => {
             }
             setIncrementAmount(0);
           }}
+          disabled={status==="loading"}
         >
-          Add If Odd
+          {status === "loading" ? "Loading..." : "Add If Odd"}
         </button>
       </div>
     </div>
