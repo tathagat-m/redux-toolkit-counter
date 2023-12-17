@@ -1,4 +1,4 @@
-# React.js Counter Task
+# Redux-Toolkit Counter Task
 
 Welcome to the React.js Counter Task! This task involves implementing a counter functionality in a React.js project. You will need to clone the project, update specific files, and push your code back to your own repository.
 
@@ -50,24 +50,6 @@ You will need to make changes in the following files. Look for comments in each 
 - Ensure that you add proper types to your code (TypeScript).
 - Write clean and readable code with proper comments.
 - Make sure the application compiles and runs without errors.
-
-## Submission
-
-Once you have implemented the required functionality:
-
-1. Commit your changes with a meaningful commit message.
-
-   ```bash
-   git commit -m "Implement counter functionality"
-   ```
-
-2. Push your changes to your own repository.
-
-   ```bash
-   git push origin [your-branch-name]
-   ```
-
-3. Submit the repo url to prithvi@smartdino.tech and cc arun@smartdino.tech
 
 ## Evaluation Criteria
 
