@@ -1,3 +1,7 @@
+***The original task was created by [pankajyadav05](https://github.com/pankajyadav05/coding-task-react).***
+
+***This repo has the changes as per the original task and is a great way to learn/dive into redux-toolkit.***
+---
 # Redux-Toolkit Counter Task
 
 Welcome to the React.js Counter Task! This task involves implementing a counter functionality in a React.js project. You will need to clone the project, update specific files, and push your code back to your own repository.
